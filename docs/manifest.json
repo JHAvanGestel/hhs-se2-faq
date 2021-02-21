@@ -12,7 +12,7 @@
           "hash": "pZwCYZT9D5oS/Qf8Kg+36g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -29,14 +29,62 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "faq/algemeen.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/algemeen.html",
+          "hash": "dfePG3jcT66z7RQY5XVPEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "faq/intro.md",
       "output": {
         ".html": {
           "relative_path": "faq/intro.html",
-          "hash": "k55qOtMUtXeNAbmYUvYqxw=="
+          "hash": "s6QnWNRPXAjmSrvWVRSnfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/java.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/java.html",
+          "hash": "AdXn2CdoiOFaKXhssuLACg=="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/scrumwise.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/scrumwise.html",
+          "hash": "0axn4epsihUJSM27w01S3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/stepik.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/stepik.html",
+          "hash": "1e0U67WEKARcVePvFjcbAg=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "faq/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "GmAr4VDX/9viLs4XN3o2kQ=="
         }
       },
       "is_incremental": false,
@@ -79,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "cm/QWR08tzz69xXCNIEFsg=="
+          "hash": "q85p56YjzfqPz5yFNs124Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -101,19 +149,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 0
+          "total_file_count": 7,
+          "skipped_file_count": 6
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -133,8 +179,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

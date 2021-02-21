@@ -1,2 +1,11 @@
-- name: Introduction
+- name: Introductie
   href: intro.md
+- name: Algemeen
+  href: algemeen.md
+- name: Java
+  href: java.md
+- name: Scrumwise
+  href: scrumwise.md
+- name: Stepik
+  href: stepik.md
+

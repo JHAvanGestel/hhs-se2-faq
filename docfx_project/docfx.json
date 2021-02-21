@@ -51,6 +51,7 @@
     "dest": "../docs/",
     "globalMetadata": {
       "_appLogoPath": "images/logo.jpg",
+      "_appFooter":"",
       "_appFaviconPath": "images/favicon-32x32.png",
       "_disableContribution": true
     },
