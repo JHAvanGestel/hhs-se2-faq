@@ -76,6 +76,53 @@ return new Fraction();
 <p>Bij bovenstaande foutmelding is het verstandig aanwijzing 2 uit de eerste Stepik les van OPT1 (nogmaals)
 te lezen:</p>
 <p>“Voor alle opdrachten geldt dat het niet de bedoeling is om een class binnen een andere class te maken.”</p>
+<h2 id="waarvoor-gebruik-je-static">Waarvoor gebruik je 'static'?</h2>
+<p>Static, ook wel statisch in het Nederlands, is eigenlijk precies het tegenovergestelde van OO (object oriëntatie).<br>
+Een statisch methode of variabel kan je <strong>altijd</strong> aanroepen, ook als er geen object van een klasse is aangemaakt.
+Een instance methode of variabel kan slechts aangeroepen worden als er een object van een klasse is aangemaakt.</p>
+<p>Eerst een voorbeeld van instance methode en variabelen (OO) waarmee jullie immiddels bekent zijn:</p>
+<h3 id="instance-methodes-en-variabelen">Instance methodes en variabelen</h3>
+<p>De klasse <code>Fraction</code> heeft twee instance variabelen. Namelijk:<br>
+<code>private Integer nominator</code> en<br>
+<code>private Integer denominator</code></p>
+<p>Beide hebben ook instance <strong>methodes</strong>. Namelijk:</p>
+<pre><code class="lang-java">public Integer getNominator(); 
+public Integer getDenominator(); 
+public void setNominator(Integer nominator); 
+public void setDenominator(Integer denominator);
+</code></pre>
+<p>(Aan de naamgeving kan je afleiden wat de methodes zouden moeten doen.)</p>
+<p>Elke van deze methodes en variabelen hebben een beperkte scope. Ze zijn slechts gerelateerd aan <strong>één</strong> object van de
+klasse Fraction.</p>
+<p>Bijvoorbeeld <code>Fraction HALF = new Fraction();</code><br>
+Als wij de instance get-methodes zouden aanroepen dan zouden wij
+hoogstwaarschijnlijk een nominator van 1 en een denominator van 2 krijgen.</p>
+<p>Stel dat dezelfde methodes in <code>Fraction QUARTER = new Fraction();</code> aanroepen, dan krijgen wij hoogstwaarschijnlijk
+nominator van 1 en denominator van 4.<br>
+De methodes en variabelen horen dus echt maar bij één object.</p>
+<h3 id="static-methodes-en-variabelen">Static methodes en variabelen</h3>
+<p>Statische methodes en variabelen doen en geven <strong>altijd</strong> hetzelfde terug, onafhankelijk vanuit waar ze aangeroepen
+worden. Een voorbeeld:</p>
+<p>We de klasse <code>Calculator</code> bevat het volgende:</p>
+<pre><code class="lang-java">public static int add(int firstNumber, int secondNumber);
+public static int subtract(int firstNumber, int secondNumber);
+public static int multiply(int firstNumber, int secondNumber);
+public static double divide(int firstNumber, intsecondNumber);
+</code></pre>
+<p>Je kan je wellicht voorstellen dat het niet uit maakt hoeveel objecten van <code>Calculator</code> je aanmaakt.<br>
+In een optelling van <em>1 + 1</em> een zal altijd resultaat van <em>2</em> moeten teruggeven.<br>
+Precies daarom is het soms handig om statische methodes te maken.</p>
+<p>Overigens kan je de add-methode als volgt aanroepen: <code>Calculator.add(1,1);</code></p>
+<p>Hetzelfde geld voor statische variabelen.<br>
+Stel je wilt een website bouwen die verschillende kleuren in zijn layout gebruikt.<br>
+Het kan handig zijn om deze kleuren in bijvoorbeeld een ArrayList te plaatsen zodat je ze later gemakkelijk
+kan aanroepen.<br>
+Eigenlijk wil je in dat geval ook dat deze ArrayList direct toegangelijk is zonder dat je eerst een
+object van de bevattende klasse hoeft aan te maken.<br>
+Dan zou je bijvoorbeeld de lijst als volgt kunnen aanmaken:</p>
+<p><code>private static ArrayList&lt;String&gt; colors = new ArrayList&lt;&gt;();</code></p>
+<p>Bij zowel de <em>public static methodes</em> in Calculator, als de <em>private static ArrayList</em> van colors is het handig dat deze niet aan
+één object gebonden zijn.</p>
 </article>
           </div>
           
