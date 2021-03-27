@@ -68,61 +68,74 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="java">Java</h1>
 
-<h2 id="wat-betekent-deze-foutmelding-non-static-variable-this-cannot-be-referenced-from-a-static-context">Wat betekent deze foutmelding? &quot;non-static variable this cannot be referenced from a static context&quot;</h2>
+<h2 id="wat-betekent-deze-foutmelding-non-static-variable-this-cannot-be-referenced-from-a-static-context">Wat betekent deze foutmelding: &quot;non-static variable this cannot be referenced from a static context&quot;?</h2>
 <pre><code class="lang-java">Compilation error Main.java:10: error: non-static variable this cannot be referenced from a static context   
 return new Fraction();
        ^
 </code></pre>
-<p>Bij bovenstaande foutmelding is het verstandig aanwijzing 2 uit de eerste Stepik les van OPT1 (nogmaals)
+<p>Bij bovenstaande foutmelding is het verstandig aanwijzing 2 uit de eerste Stepik-les van OPT1 (nogmaals)
 te lezen:</p>
-<p>“Voor alle opdrachten geldt dat het niet de bedoeling is om een class binnen een andere class te maken.”</p>
+<p>“Voor alle opdrachten geldt dat het niet de bedoeling is om een class binnen een andere class te maken”.</p>
 <h2 id="waarvoor-gebruik-je-static">Waarvoor gebruik je 'static'?</h2>
-<p>Static, ook wel statisch in het Nederlands, is eigenlijk precies het tegenovergestelde van OO (object oriëntatie).<br>
-Een statisch methode of variabel kan je <strong>altijd</strong> aanroepen, ook als er geen object van een klasse is aangemaakt.
-Een instance methode of variabel kan slechts aangeroepen worden als er een object van een klasse is aangemaakt.</p>
-<p>Eerst een voorbeeld van instance methode en variabelen (OO) waarmee jullie immiddels bekent zijn:</p>
-<h3 id="instance-methodes-en-variabelen">Instance methodes en variabelen</h3>
-<p>De klasse <code>Fraction</code> heeft twee instance variabelen. Namelijk:<br>
-<code>private Integer nominator</code> en<br>
-<code>private Integer denominator</code></p>
-<p>Beide hebben ook instance <strong>methodes</strong>. Namelijk:</p>
-<pre><code class="lang-java">public Integer getNominator(); 
-public Integer getDenominator(); 
-public void setNominator(Integer nominator); 
-public void setDenominator(Integer denominator);
+<p>Static, ook wel statisch in het Nederlands, is eigenlijk precies het tegenovergestelde van OO (Object Oriëntatie).</p>
+<p>Een statische methode of variabele kun je <strong>altijd</strong> aanroepen; ook als er geen object van een klasse is aangemaakt.
+Een instance-methode of -variabele kan slechts aangeroepen worden als er een object van een klasse is aangemaakt.</p>
+<p>Eerst een voorbeeld van een instance-methode met variabelen (OO) waarmee jullie immiddels bekend zijn.</p>
+<h3 id="instance-methodes-en--variabelen">Instance-methodes en -variabelen</h3>
+<p>De klasse <code>Fraction</code> heeft twee instance-variabelen voor teller (nominator) en noemer (denominator) (in 2/3 is 2 de
+teller en 3 de noemer; teller / noemer); namelijk:</p>
+<pre><code class="lang-java">private Integer nominator;
+private Integer denominator; 
 </code></pre>
-<p>(Aan de naamgeving kan je afleiden wat de methodes zouden moeten doen.)</p>
-<p>Elke van deze methodes en variabelen hebben een beperkte scope. Ze zijn slechts gerelateerd aan <strong>één</strong> object van de
+<p>Beiden hebben ook instance-<strong>methodes</strong>; namelijk:</p>
+<pre><code class="lang-java">public Integer getNominator (); 
+public Integer getDenominator (); 
+public void setNominator (Integer nominator); 
+public void setDenominator (Integer denominator);
+</code></pre>
+<p>(uit de naamgeving kun je afleiden wat de methodes zouden moeten doen)</p>
+<p>Elk van deze methodes en variabelen hebben een beperkte scope. Ze zijn slechts gerelateerd aan <strong>één</strong> object van de
 klasse Fraction.</p>
-<p>Bijvoorbeeld <code>Fraction HALF = new Fraction();</code><br>
-Als wij de instance get-methodes zouden aanroepen dan zouden wij
-hoogstwaarschijnlijk een nominator van 1 en een denominator van 2 krijgen.</p>
-<p>Stel dat dezelfde methodes in <code>Fraction QUARTER = new Fraction();</code> aanroepen, dan krijgen wij hoogstwaarschijnlijk
-nominator van 1 en denominator van 4.<br>
-De methodes en variabelen horen dus echt maar bij één object.</p>
+<p>Laten we bijvoorbeeld uitgaan van de volgende declaratie:</p>
+<pre><code class="lang-java">Fraction HALF = new Fraction(1, 2);
+</code></pre>
+<p>Als wij na deze declaratie de instance-(get-)methodes van het object <code>HALF</code> zouden aanroepen, dan krijgen we met
+<code>HALF.getNominator ()</code> 1 terug en met <code>HALF.getDenominator ()</code> 2 als resultaat.</p>
+<p>Stel dat we en object <code>QUARTER</code> als volgt zouden definiëren:</p>
+<pre><code class="lang-java">Fraction QUARTER = new Fraction(1, 4);
+</code></pre>
+<p>Dan zou de aanroep van dezelfde methodes als nominator 1 opleveren en als denominator 4.</p>
+<p>De methodes en variabelen horen dus echt maar bij één object.</p>
 <h3 id="static-methodes-en-variabelen">Static methodes en variabelen</h3>
 <p>Statische methodes en variabelen doen en geven <strong>altijd</strong> hetzelfde terug, onafhankelijk vanuit waar ze aangeroepen
 worden. Een voorbeeld:</p>
-<p>We de klasse <code>Calculator</code> bevat het volgende:</p>
+<p>De klasse <code>Calculator</code> bevat het volgende:</p>
 <pre><code class="lang-java">public static int add(int firstNumber, int secondNumber);
 public static int subtract(int firstNumber, int secondNumber);
 public static int multiply(int firstNumber, int secondNumber);
 public static double divide(int firstNumber, intsecondNumber);
 </code></pre>
-<p>Je kan je wellicht voorstellen dat het niet uit maakt hoeveel objecten van <code>Calculator</code> je aanmaakt.<br>
-In een optelling van <em>1 + 1</em> een zal altijd resultaat van <em>2</em> moeten teruggeven.<br>
-Precies daarom is het soms handig om statische methodes te maken.</p>
-<p>Overigens kan je de add-methode als volgt aanroepen: <code>Calculator.add(1,1);</code></p>
-<p>Hetzelfde geld voor statische variabelen.<br>
-Stel je wilt een website bouwen die verschillende kleuren in zijn layout gebruikt.<br>
+<p>Je kunt je wellicht voorstellen dat het niet uitmaakt hoeveel objecten van <code>Calculator</code> je aanmaakt.
+Een optelling van '<em>1 + 1</em>' zal altijd het resultaat <em>2</em> op moeten leveren. Daar hoef je geen object voor te maken.<br>
+Precies daarom is het <strong>soms</strong> handig om statische methodes te maken.</p>
+<p>Overigens kun je de add-methode als volgt aanroepen:</p>
+<pre><code class="lang-java">Calculator.add (1, 1);
+</code></pre>
+<p>Hetzelfde geldt voor statische variabelen.<br>
+Stel dat je een website wilt bouwen die verschillende kleuren in de layout gebruikt.<br>
 Het kan handig zijn om deze kleuren in bijvoorbeeld een ArrayList te plaatsen zodat je ze later gemakkelijk
-kan aanroepen.<br>
+kunt aanroepen en gebruiken.
 Eigenlijk wil je in dat geval ook dat deze ArrayList direct toegangelijk is zonder dat je eerst een
 object van de bevattende klasse hoeft aan te maken.<br>
-Dan zou je bijvoorbeeld de lijst als volgt kunnen aanmaken:</p>
-<p><code>private static ArrayList&lt;String&gt; colors = new ArrayList&lt;&gt;();</code></p>
-<p>Bij zowel de <em>public static methodes</em> in Calculator, als de <em>private static ArrayList</em> van colors is het handig dat deze niet aan
-één object gebonden zijn.</p>
+Dan zou je in de class <code>Layout</code> bijvoorbeeld de lijst als volgt kunnen aanmaken:</p>
+<pre><code class="lang-java">private static ArrayList&lt;String&gt; colors = new ArrayList&lt;String&gt; ();
+</code></pre>
+<p>Omdat deze eigenschap van <code>Layout</code> <code>private</code> is, moet een <code>public</code> methode <code>getColors</code> worden
+toegevoegd om deze lijst van buiten <code>Layout</code> aan te kunnen roepen:</p>
+<pre><code class="lang-java">ArrayList&lt;String&gt; colors = Layout.getColors ();
+</code></pre>
+<p>Bij zowel de <em>public static methodes</em> in Calculator, als de <em>private static ArrayList</em> van colors is het handig dat
+deze niet aan één object gebonden zijn.</p>
 </article>
           </div>
           
