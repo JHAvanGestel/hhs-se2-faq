@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/admin/RiderProjects/hhs-se2-faq/docfx_project",
+  "source_base_path": "C:/Users/kjvdlelij/OneDrive - De Haagse Hogeschool/Onderwijs/Projects IntelliJ/hhs-se2-faq/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,19 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "pZwCYZT9D5oS/Qf8Kg+36g=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "H5frWk4fYGIWHpFNp3BdfA=="
+          "hash": "5PUcwpOmKEP7wcsJjreQmg=="
         }
       },
       "is_incremental": false,
@@ -36,7 +24,7 @@
           "hash": "dfePG3jcT66z7RQY5XVPEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +36,7 @@
           "hash": "s6QnWNRPXAjmSrvWVRSnfw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "faq/java.html",
-          "hash": "uNlA5Ezs4m1aPB+CTDOSOA=="
+          "hash": "W9LZVxGCNUod5/7r0DTRCA=="
         }
       },
       "is_incremental": false,
@@ -72,7 +60,7 @@
           "hash": "0axn4epsihUJSM27w01S3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +72,7 @@
           "hash": "1e0U67WEKARcVePvFjcbAg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -130,7 +118,7 @@
           "hash": "q85p56YjzfqPz5yFNs124Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -149,17 +137,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 7,
-          "skipped_file_count": 6
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -179,8 +169,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
