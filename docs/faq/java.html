@@ -127,9 +127,7 @@ Het kan handig zijn om deze kleuren in bijvoorbeeld een ArrayList te plaatsen zo
 kunt aanroepen en gebruiken.
 Eigenlijk wil je in dat geval ook dat deze ArrayList direct toegangelijk is zonder dat je eerst een
 object van de bevattende klasse hoeft aan te maken.<br>
-Dan zou je in de class <code>Layout</code> bijvoorbeeld de lijst als volgt kunnen aanmaken:</p>
-<pre><code class="lang-java">private static ArrayList&lt;String&gt; colors = new ArrayList&lt;String&gt; ();
-</code></pre>
+Dan zou je bijvoorbeeld de lijst als volgt kunnen aanmaken:</p>
 <p>Omdat deze eigenschap van <code>Layout</code> <code>private</code> is, moet een <code>public</code> methode <code>getColors</code> worden
 toegevoegd om deze lijst van buiten <code>Layout</code> aan te kunnen roepen:</p>
 <pre><code class="lang-java">ArrayList&lt;String&gt; colors = Layout.getColors ();
