@@ -36,7 +36,7 @@
           "hash": "dfePG3jcT66z7RQY5XVPEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "faq/intellij.html",
-          "hash": "z365c/peWXr7zmPecR8q1g=="
+          "hash": "6FOrh1ud3e06fwk9hX00Vw=="
         }
       },
       "is_incremental": false,
@@ -60,7 +60,7 @@
           "hash": "s6QnWNRPXAjmSrvWVRSnfw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "mQamki4m/w2RPs4IcL4+ng=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "0axn4epsihUJSM27w01S3A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "1e0U67WEKARcVePvFjcbAg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
