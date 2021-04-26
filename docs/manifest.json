@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/kjvdlelij/OneDrive - De Haagse Hogeschool/Onderwijs/Projects IntelliJ/hhs-se2-faq/docfx_project",
+  "source_base_path": "C:/Users/admin/RiderProjects/hhs-se2-faq/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,19 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "5PUcwpOmKEP7wcsJjreQmg=="
+          "hash": "pZwCYZT9D5oS/Qf8Kg+36g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "H5frWk4fYGIWHpFNp3BdfA=="
         }
       },
       "is_incremental": false,
@@ -24,6 +36,18 @@
           "hash": "dfePG3jcT66z7RQY5XVPEg=="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/intellij.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/intellij.html",
+          "hash": "6FOrh1ud3e06fwk9hX00Vw=="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -36,7 +60,7 @@
           "hash": "s6QnWNRPXAjmSrvWVRSnfw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "faq/java.html",
-          "hash": "W9LZVxGCNUod5/7r0DTRCA=="
+          "hash": "mQamki4m/w2RPs4IcL4+ng=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +84,7 @@
           "hash": "0axn4epsihUJSM27w01S3A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +96,7 @@
           "hash": "1e0U67WEKARcVePvFjcbAg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,7 +105,62 @@
       "output": {
         ".html": {
           "relative_path": "faq/toc.html",
-          "hash": "GmAr4VDX/9viLs4XN3o2kQ=="
+          "hash": "fk6Elq90gXFyCU6fXa70mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Intellij/Afbeelding1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Intellij/Afbeelding1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Intellij/Afbeelding2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Intellij/Afbeelding2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Intellij/Afbeelding3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Intellij/Afbeelding3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Intellij/Afbeelding4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Intellij/Afbeelding4.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Intellij/Afbeelding5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Intellij/Afbeelding5.jpg"
         }
       },
       "is_incremental": false,
@@ -118,7 +197,7 @@
           "hash": "q85p56YjzfqPz5yFNs124Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -137,19 +216,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 0
+          "total_file_count": 8,
+          "skipped_file_count": 7
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -169,8 +246,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
