@@ -2,12 +2,13 @@
   href: intro.md
 - name: Algemeen
   href: algemeen.md
-- name: Java
-  href: java.md
+- name: Github
+  href: github.md
 - name: IntelliJ
   href: intellij.md
+- name: Java
+  href: java.md
 - name: Scrumwise
   href: scrumwise.md
 - name: Stepik
   href: stepik.md
-

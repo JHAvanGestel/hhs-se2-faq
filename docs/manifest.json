@@ -36,7 +36,19 @@
           "hash": "dfePG3jcT66z7RQY5XVPEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/github.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/github.html",
+          "hash": "HmifpHPArod8ciXuNwI7PA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +72,7 @@
           "hash": "s6QnWNRPXAjmSrvWVRSnfw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +84,7 @@
           "hash": "mQamki4m/w2RPs4IcL4+ng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +96,7 @@
           "hash": "0axn4epsihUJSM27w01S3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +108,7 @@
           "hash": "1e0U67WEKARcVePvFjcbAg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,7 +117,62 @@
       "output": {
         ".html": {
           "relative_path": "faq/toc.html",
-          "hash": "fk6Elq90gXFyCU6fXa70mQ=="
+          "hash": "RvukUMNFQ09DUL0rJJsd1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Github/Afbeelding1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Github/Afbeelding1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Github/Afbeelding2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Github/Afbeelding2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Github/Afbeelding3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Github/Afbeelding3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Github/Afbeelding4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Github/Afbeelding4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Github/Afbeelding5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Github/Afbeelding5.png"
         }
       },
       "is_incremental": false,
@@ -225,8 +292,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 8,
-          "skipped_file_count": 7
+          "total_file_count": 9,
+          "skipped_file_count": 9
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
